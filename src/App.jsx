@@ -1,12 +1,16 @@
 import React from "react";
 import "./App.scss";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// react-router-dom is a package that allows for the creation of navigation in the app
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <h1>And we begin...</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

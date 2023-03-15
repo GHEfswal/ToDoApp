@@ -1,0 +1,24 @@
+.addTodo {
+  display: flex; // w/o flex, the "add" button remains in it's default size.
+  gap: 10px;
+
+  &__input {
+    padding: 15px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+  }
+
+  &__button {
+    width: 20%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #8f4de6;
+    color: white;
+    font-size: 40px;
+  }
+}

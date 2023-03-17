@@ -1,0 +1,56 @@
+.listTodo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Courier;
+  margin-top: 20px;
+
+  // ***** alternative to "gap" *****
+
+  //   margin-bottom: 20px;
+
+  // &__row:last-child {
+  //   margin-bottom: 0;
+  // }
+  // *******************************
+
+  &__row {
+    display: flex;
+  }
+
+  &__item {
+    font-size: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #f0eaf2;
+  }
+
+  // ***** alternative item row format *****
+
+  // &__row {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   background-color: #f0eaf2;
+  // }
+
+  // &__item {
+  //   font-size: 20px;
+  //   padding: 20px;
+  // }
+
+  // ***************************************
+
+  &__delete {
+    font-size: 18px;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    display: none;
+  }
+
+  &__row:hover &__delete {
+    display: block;
+  }
+}

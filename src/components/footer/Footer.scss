@@ -1,0 +1,49 @@
+.footer {
+  // display: flex;
+  // flex-direction: column;
+  // gap: 20px;
+  // font-family: Courier;
+  margin-top: 20px;
+
+  // ***** alternative to "gap" *****
+
+  //   margin-bottom: 20px;
+
+  // &__row:last-child {
+  //   margin-bottom: 0;
+  // }
+  // *******************************
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    // border: 2px red dotted;
+  }
+
+  &__pending {
+    font-size: 20px;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+    background-color: white;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__clearall {
+    font-size: 18px;
+    font-family: Arial;
+    background-color: #6f2ada;
+    border: none;
+    color: white;
+    padding: 14px;
+    cursor: pointer;
+    display: none;
+  }
+
+  &__row:hover &__clearall {
+    display: block;
+  }
+}
